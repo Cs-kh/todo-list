@@ -1,5 +1,5 @@
 import "./FirstPage.css";
-
+import { Link } from "react-router-dom";
 export default function FirstPage() {
   return (
     <main>
@@ -15,7 +15,9 @@ export default function FirstPage() {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse,
             minima?Lorem ipsum dolor sit amet lorem
           </p>
-          <button>get started</button>
+          <Link to="/todo">
+            <button>get started</button>
+          </Link>
         </div>
       </div>
     </main>

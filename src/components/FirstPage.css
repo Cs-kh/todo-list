@@ -61,3 +61,52 @@ button {
   text-transform: capitalize;
   cursor: pointer;
 }
+
+section {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 46px;
+}
+.leftSide {
+  width: 25%;
+}
+.mainCards {
+  flex: 1;
+}
+.list-todo {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  height: 300px;
+
+  justify-content: space-between;
+}
+
+.list-todo li {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+
+.list-todo li span {
+  width: 35px;
+  height: 35px;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+.list-todo li .work {
+  background-color: #918eb2;
+}
+.list-todo li .study {
+  background-color: #b5c9b2;
+}
+.list-todo li .enter {
+  background-color: #ae8888;
+}
+
+.list-todo li .family {
+  background-color: #d2ceff;
+}
+.list-todo li h3 {
+  font-size: 18px;
+}

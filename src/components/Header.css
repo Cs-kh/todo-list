@@ -1,0 +1,21 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  justify-items: center;
+  place-items: center;
+  padding: 20px 46px;
+}
+
+.header h1 {
+  text-transform: lowercase;
+  font-style: normal;
+  font-weight: 600;
+  color: #69665c;
+}
+
+.header button {
+  background-color: transparent;
+  color: #69665c;
+  font-size: 40px;
+  font-weight: 600;
+}
