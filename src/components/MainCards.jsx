@@ -1,10 +1,11 @@
 import "./FirstPage.css";
 import TodoCard from "./TodoCard";
 
-export default function MainCards() {
+export default function MainCards(props) {
+  const { cardDetails } = props;
   return (
     <div className="mainCards">
-      <TodoCard />
+      <TodoCard cardDetails={cardDetails} />
     </div>
   );
 }

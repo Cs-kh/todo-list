@@ -1,0 +1,33 @@
+.cards {
+  display: flex;
+
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 520px;
+  background-color: #f9dada;
+  padding: 10px 20px;
+  margin-bottom: 26px;
+}
+.cardTitle {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.cardTitle h2 {
+  color: #313131;
+}
+.cardTitle button {
+  background-color: transparent;
+  text-align: center;
+  color: #313131;
+}
+
+.card p {
+  font-size: 18px !important;
+  color: #5c5a57;
+
+  width: 90%;
+}

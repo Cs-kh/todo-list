@@ -2,7 +2,7 @@ import "./TodoInput.css";
 
 function TodoInput(props) {
   // eslint-disable-next-line react/prop-types
-  const { showInputHandler } = props;
+  const { showInputHandler, addCardHandler, setTitle, setDescription } = props;
   return (
     <div className="modal">
       <article className="modal-container">
@@ -31,6 +31,7 @@ function TodoInput(props) {
               className="form-control"
               id="title"
               placeholder="title"
+              onChange={(e) => setTitle(e.target.value)}
             />
           </div>
 
@@ -41,6 +42,7 @@ function TodoInput(props) {
               name=""
               id="description"
               placeholder="description"
+              onChange={(e) => setDescription(e.target.value)}
             />
           </div>
         </section>
@@ -51,7 +53,12 @@ function TodoInput(props) {
           >
             Close
           </button>
-          <button className="button is-primary">Add</button>
+          <button
+            className="button is-primary"
+            onClick={() => addCardHandler()}
+          >
+            Add
+          </button>
         </footer>
       </article>
     </div>
