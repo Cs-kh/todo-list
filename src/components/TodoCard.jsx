@@ -1,8 +1,10 @@
 import "./TodoCard.css";
 
 function TodoCard(props) {
+  // eslint-disable-next-line react/prop-types
   const { cardDetails } = props;
 
+  // eslint-disable-next-line react/prop-types
   if (!cardDetails || cardDetails.length === 0) {
     return <p>No cards available</p>;
   }

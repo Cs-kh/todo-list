@@ -13,7 +13,6 @@ function SecondPage() {
 
   const showInputHandler = () => {
     setShowInput(!showInput);
-    console.log(showInput);
   };
 
   const addCardHandler = () => {
@@ -25,7 +24,6 @@ function SecondPage() {
     setTitle("");
     setDescription("");
     setShowInput(false);
-    console.log(cardDetails);
   };
 
   return (
